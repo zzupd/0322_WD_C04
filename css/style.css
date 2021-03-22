@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+/* Reset */
+* {
+    color: #333;  /* 기본 텍스트 색상 */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;  /* 배경색 */
+}
+a                   { text-decoration: none; }
+a:link             { color: #222; }
+a:visited         { color: #222; }
+a:hover          { color: #333; }
+a:active          { color: #333; }
+img                { vertical-align: middle; }
+ul                   { list-style: none; }
+/* Reset */
+
+
+
+/* Guide Line */
+div#wrap                         { border: 1px solid #000; }
+#wrap>header#header     { border: 1px solid #f80; }
+#wrap>main#main           { border: 1px solid #f80; }
+#main>div#slide               { border: 1px solid #08f; }
+#main>div#concents         { border: 1px solid #08f; }
+#main>footer#footer         { border: 1px solid #08f; }
+/* Guide Line */
+
+
+/* 플렉스 레이아웃 적용 */
+.flexContainer {
+    display: flex;
+}
+/* 플렉스 레이아웃 적용 */
+
+
+/* div#wrap */
+div#wrap {
+    width: 1000px;
+}
+/* div#wrap */
+
+
+/* #wrap>header#header */
+#wrap>header#header {
+    width: 170px;
+}
+/* #wrap>header#header */
+
+
+/* #wrap>main#main */
+#wrap>main#main {
+    flex: 1;
+}
+/* #wrap>main#main */
+
+
+/* #main>#slide */
+#main>#slide {
+    height: 350px;
+}
+/* #main>#slide */
+
+
+/* #main>#contents */
+#main>#contents {
+    height: 200px;
+    justify-content: space-between;
+}
+
+    /* div#bbsNotice */
+#main>#contents>div {
+    width: 270px;
+    border: 1px solid #000;
+}
+    /* div#bbsNotice */
+/* #main>#contents */
+
+
+/* #main>#footer */
+#main>#footer {
+    height: 100px;
+}
+#main>#footer>div#copyright {
+    border: 1px solid #000;
+    flex: 1;
+
+}
+#main>#footer>aside#aside {
+    border: 1px solid #000;
+    width: 200px;
+}
+/* #main>#footer */
+
+
+/* div#layerBG 모달레이어 팝업 */
+div#layerBG {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: none;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+#layerBG>div#layerPopup {
+    padding: 20px;
+    background-color: #fff;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#layerBG div#btnArea {
+    text-align: right;
+    padding-right: 80px;
+}
+/* div#layerBG 모달레이어 팝업 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
