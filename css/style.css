@@ -23,7 +23,7 @@ ul                   { list-style: none; }
 
 /* Guide Line */
 div#wrap                         { border: 1px solid #000; }
-#wrap>header#header     { border: 1px solid #f80; }
+/*#wrap>header#header     { border: 1px solid #f80; }*/
 #wrap>main#main           { border: 1px solid #f80; }
 #main>div#slide               { border: 1px solid #08f; }
 #main>div#concents         { border: 1px solid #08f; }
@@ -54,7 +54,7 @@ div#wrap {
 #header>div#headerLogo {
     height: 100px;
     line-height: 100px;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
 }
 
     /* #header>div#headerLogo */
@@ -62,33 +62,39 @@ div#wrap {
 
     /* nav#gnb */
 nav#gnb {
-    border: 1px solid #f00;
+    /*border: 1px solid #f00;*/
 }
 #gnb>ul#mainMenu {
     width: 180px;
-    border: 1px solid #00f;
+    /*border: 1px solid #00f;*/
     margin: 0 auto;
+}
+#gnb .mainLi {
+    border: 1px solid #f6aa32;
+}
+
+#gnb .mainLi>a {
+     padding: 16px 4px;
 }
 #gnb>#mainMenu a {
     width: 180px;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    padding: 16px 4px;
-
 
     display: inline-block;
 }
-#gnb>#mainMenu a:hover {
+#gnb li:hover>a {
+    /* 메인메뉴와 서브메뉴의 하이라이트 효과 적용 */
     color: #f4fa5c;
     background-color: #f6aa32;
-}
-#gnb .mainLi>a {
-     border: 1px solid #000;
 }
 #gnb .subMenu  {
     position: relative;
     display: none;
+}
+#gnb .subMenu a {
+    padding: 8px 4px;
 }
 
     /* nav#gnb */
