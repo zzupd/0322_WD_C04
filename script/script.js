@@ -10,4 +10,18 @@ $(function() {
     /* GNB */
 
 
+    /* slideshow */
+    setInterval(fnSlide, 3000);
+    function fnSlide() {
+        $("#slide a:first-child").fadeOut(600);
+        $("#slide a:nth-child(2)").fadeIn(
+            1000,
+            function() {
+                $("#slide a:first-child").insertAfter("#slide a:last-child");
+            }
+        );
+    }
+
+    /* slideshow */
+
 });

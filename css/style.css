@@ -47,7 +47,7 @@ div#wrap {
 
 /* #wrap>header#header */
 #wrap>header#header {
-    width: 210px;
+    width: 200px;
 }
 
     /* #header>div#headerLogo */
@@ -114,6 +114,34 @@ nav#gnb {
 #main>#slide {
     height: 350px;
 }
+
+#main #shuttleFrame {
+    width: 800px;
+    height: 350px;
+}
+#main #shuttleFrame a {
+    position: absolute;
+}
+#main #shuttleFrame span {
+    color: #f6aa32;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 20px;
+    border: 4px solid rgba(246, 170, 50, 0.2);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#main #shuttleFrame a:not(:first-child) {
+    display: none;
+}
+
+
+
 /* #main>#slide */
 
 
