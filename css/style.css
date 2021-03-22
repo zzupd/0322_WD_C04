@@ -157,6 +157,17 @@ nav#gnb {
     border: 1px solid #000;
 }
     /* div#bbsNotice */
+
+
+    /* div#shortcut */
+#main div#shortcut {
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+}
+    /* div#shortcut */
+
+
 /* #main>#contents */
 
 
