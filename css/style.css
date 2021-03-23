@@ -151,17 +151,84 @@ nav#gnb {
     justify-content: space-between;
 }
 
-    /* div#bbsNotice */
+
+    /* div#contents 공통 사항 */
 #main>#contents>div {
-    width: 260px;
     border: 1px solid #000;
 }
+#main>#contents .tabArea {
+    padding: 20px 6px;
+    border: 1px solid #f00;
+}
+#main>#contents .tabArea button {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 2px 8px;
+    border: 1px solid #aaa;
+    border-bottom: none;
+    position: relative;
+    left: 30px;
+    top: 1px;
+}
+#main>#contents .tabArea .tabContents {
+    padding: 8px;
+    border: 1px solid #aaa;
+}
+#main>#contents>div table {
+    width: 100%;
+    /*border: 1px solid #000;*/
+}
+/*#main>#contents>div td {
+     border: 1px solid #000;
+}*/
+
+
+  /* div#contents 공통 사항 */
+
     /* div#bbsNotice */
+#main>#contents>div#bbsNotice {
+    flex: 1;
+}
+#main>#contents>div#bbsNotice button {
+    background-color: #fff;
+}
+
+#main>#contents>div#bbsNotice td {
+    font-size: 13px;
+    line-height: 22px;
+}
+#main>#contents>div#bbsNotice td:last-child {
+    text-align: right;
+}
+    /* div#bbsNotice */
+
+
+    /* div#bbsGallery */
+#main>#contents>div#bbsGallery {
+    flex: 1;
+}
+#main>#contents>div#bbsGallery button {
+    top: 0;
+}
+
+#main>#contents .tabArea #tabContents2 {
+    padding: 11px 0;
+}
+#main>#contents .tabArea table {
+    width: 100%;
+    margin: 0;
+}
+
+#main>#contents>div#bbsGallery td {
+    text-align: center;
+}
+    /* div#bbsGallery */
 
 
     /* div#shortcut */
 #main div#shortcut {
     height: 200px;
+    width: 210px;
     text-align: center;
     line-height: 200px;
 }
