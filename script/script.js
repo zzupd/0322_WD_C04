@@ -24,4 +24,20 @@ $(function() {
 
     /* slideshow */
 
+    /* modalLayerPopup */
+    $(".layerPopupPoint").click(function(){
+        $("#layerBG").css({"display": "block"});
+    });
+
+    $("#layerBG #closeBtn").click(function(){
+        $("#layerBG").css({"display": "none"});
+    });
+    /* modalLayerPopup */
+
 });
+
+
+
+
+
+
